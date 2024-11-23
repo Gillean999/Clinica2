@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="D:\complicado\Trabalho\style_pagamento.css">
+  <title>Pagamento</title>
+</head>
+<body>
+  
+  <form id="payment-form">
+    <h1>Pagamento</h1>
+    <h2>Selecione o Método de Pagamento</h2>
+    <label>
+      <input type="radio" name="payment_method" value="pix" checked>
+      PIX
+    </label><br>
+    <label>
+      <input type="radio" name="payment_method" value="cartao">
+      Cartão de Crédito
+    </label><br>
+    <label>
+      <input type="radio" name="payment_method" value="boleto">
+      Boleto Bancário
+    </label><br><br>
+      <button type="button" onclick="confirmPayment()">Prosseguir para Pagamento</button>
+    </a>
+  </form>
+  <script>
+    function confirmPayment() {
+    }
+  </script>
+  <div class="contato">
+    <h3>Contato</h3>
+    <p><strong>Email:</strong> <a href="nomedaclinica@gmail.com">nomedaclinica@gmail.com</a></p>
+    <p><strong>Telefone:</strong> <a href="tel:+5521123456789">(79) 1234-5678</a></p>
+    <p><strong>Endereço:</strong> Rua A, 123, Aracaju, Sergipe</p>
+</div>
+</body>
+</html>
