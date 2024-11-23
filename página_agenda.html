@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/style_agenda.css"/>
+    <link rel="stylesheet" href="d:\complicado\Trabalho\style_agenda.css"/>
     <title>Agendamento "nome da clinica"</title>
 </head>
 <body>
     <header>
     <h1 class="nome">"nome da clinica"</h1>
     <ul>
-        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/Página_inicial.html">Inicio</a></li>
-        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/página_cadastro.html">cadastro</a></li>
-        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/página_paciente.html">paciente</a></li>
-        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/página_medico.html">medico</a></li>
-        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/página_exames.html">Exames</a></li>
+        <li><a href="d:\complicado\Trabalho/Página_inicial.html">Inicio</a></li>
+        <li><a href="d:\complicado\Trabalho/página_cadastro.html">cadastro</a></li>
+        <li><a href="d:\complicado\Trabalho/página_paciente.html">paciente</a></li>
+        <li><a href="d:\complicado\Trabalho/página_medico.html">medico</a></li>
+        <li><a href="d:\complicado\Trabalho/página_exames.html">Exames</a></li>
 
     </ul>
 </header>
@@ -47,23 +47,24 @@
             <div id="appointmentForm" class="appointment-form">
                 <form>
                     <label for="appointmentTime">Horário:</label>
-                    <input type="time" id="appointmentTime" required>
-                    <button type="submit">Agendar</button><br>
+                    <input type="time" id="appointmentTime" min="07:00" max="11:00" value="07:00" required>
+                    
                     
             <br><br><label for="exame">Tipo do exame:</label>
             <select id="" name="">
-                <option value="A">A</option>
+                <option value="A">raio-X</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 </select><br><br>
 
             <label for="motivo">Motivo do Agendamento:</label>
             <textarea id="motivo" name="motivo" rows="4" placeholder="Descreva o motivo do agendamento" required></textarea><br>
-            <button type="submit">Agendar</button>
+            <a href="d:\complicado\Trabalho/metodo.html" class="button">agendar</a>
+            
                 </form>
             </div>
         
-            <script src="C:\Users\gille\OneDrive\Área de Trabalho\TUDO\Visual\Trabalho\test4.js"></script>
+            <script src="d:\complicado\Trabalho\test4.js"></script>
 
         </form>
     </div>
@@ -75,7 +76,6 @@
             <p><strong>Telefone:</strong> <a href="tel:+5521123456789">(79) 1234-5678</a></p>
             <p><strong>Endereço:</strong> Rua A, 123, Aracaju, Sergipe</p>
         </div>
-        <p>2024 Minha Empresa. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
