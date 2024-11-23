@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/style_agenda.css"/>
+    <title>Agendamento "nome da clinica"</title>
+</head>
+<body>
+    <header>
+    <h1 class="nome">"nome da clinica"</h1>
+    <ul>
+        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/Página_inicial.html">Inicio</a></li>
+        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/página_cadastro.html">cadastro</a></li>
+        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/página_paciente.html">paciente</a></li>
+        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/página_medico.html">medico</a></li>
+        <li><a href="file:///C:/Users/gille/OneDrive/Área%20de%20Trabalho/TUDO/Visual/Trabalho/página_exames.html">Exames</a></li>
+
+    </ul>
+</header>
+    <div class="container">
+        <h2>Agendamento de Consultoria</h2>
+        <form action="/enviar-agendamento" method="POST">
+            <h3>Agendar para o dia: <span id="selectedDate"></span></h3>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prevMonth">Anterior</button>
+                    <span id="monthYear"></span>
+                    <button id="nextMonth">Próximo</button><br>
+                </div>
+                <table class="tabela" id="calendar">
+                    <thead class="dia">
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody">            </tbody>
+                </table>
+            </div>
+        
+            <div id="appointmentForm" class="appointment-form">
+                <form>
+                    <label for="appointmentTime">Horário:</label>
+                    <input type="time" id="appointmentTime" required>
+                    <button type="submit">Agendar</button><br>
+                    
+            <br><br><label for="exame">Tipo do exame:</label>
+            <select id="" name="">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                </select><br><br>
+
+            <label for="motivo">Motivo do Agendamento:</label>
+            <textarea id="motivo" name="motivo" rows="4" placeholder="Descreva o motivo do agendamento" required></textarea><br>
+            <button type="submit">Agendar</button>
+                </form>
+            </div>
+        
+            <script src="C:\Users\gille\OneDrive\Área de Trabalho\TUDO\Visual\Trabalho\test4.js"></script>
+
+        </form>
+    </div>
+    
+    <footer>
+        <div class="contato">
+            <h3>Contato</h3>
+            <p><strong>Email:</strong> <a href="nomedaclinica@gmail.com">nomedaclinica@gmail.com</a></p>
+            <p><strong>Telefone:</strong> <a href="tel:+5521123456789">(79) 1234-5678</a></p>
+            <p><strong>Endereço:</strong> Rua A, 123, Aracaju, Sergipe</p>
+        </div>
+        <p>2024 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
