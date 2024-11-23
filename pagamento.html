@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="D:\complicado\Trabalho\style_pagamento.css">
+  <title>Valor da consulta 200 reais</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <h1>Valor da consulta:</h1>
+  <h2>R$200,00</h2>
+  <image src="D:\complicado\Trabalho\qrcode.png" alt="qrcode pagamento"></image>
+  <div class="copy-container">
+    <input type="text" id="texto" value="00020126450014br.gov.bcb.pix0123kauacosta1111@gmail.com52040000530398654041.005802BR5924Kaua Costa Vieira Santos6008Brasilia62080504mpda6304EF9F">
+    <button onclick="copiarTexto()">Copiar</button>
+  </div>
+  <a href="D:\complicado\Trabalho\confirmacao.html"><button >Confirmar Pagamento</button></a>
+
+  <script>
+    function copiarTexto() {
+      const texto = document.getElementById("texto");
+      texto.select();
+      texto.setSelectionRange(0, 99999); 
+      document.execCommand("copy");
+    
+    }
+  </script>
+
+  <div class="contato">
+    <h3>Contato</h3>
+    <p><strong>Email:</strong> <a href="nomedaclinica@gmail.com">nomedaclinica@gmail.com</a></p>
+    <p><strong>Telefone:</strong> <a href="tel:+5521123456789">(79) 1234-5678</a></p>
+    <p><strong>Endereço:</strong> Rua A, 123, Aracaju, Sergipe</p>
+</div>
+</body>
+</html>
